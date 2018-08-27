@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AnyDoWebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:AnyDoWebAPI.RouteConfig">
+            <summary>
+            Classe de configurações de rota.
+            </summary>
+        </member>
+        <member name="M:AnyDoWebAPI.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)">
+            <summary>
+            Método que registra as configurações das rotas
+            </summary>
+        </member>
+        <member name="T:AnyDoWebAPI.SwaggerConfig">
+            <summary>
+            Classe de configuração do Swagger
+            </summary>
+        </member>
+        <member name="M:AnyDoWebAPI.SwaggerConfig.Register">
+            <summary>
+            Método que registra as configurações do Swagger.
+            </summary>
+        </member>
+        <member name="M:AnyDoWebAPI.SwaggerConfig.GetXmlCommentsPath">
+            <summary>
+            Método que formata o caminho da documentação xml do Swagger.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AnyDoWebAPI.WebApiConfig">
+            <summary>
+            Classe de configuração da Web API
+            </summary>
+        </member>
+        <member name="M:AnyDoWebAPI.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Método que registra as configurações da Web API.
+            </summary>
+        </member>
+        <member name="T:AnyDoWebAPI.Controllers.TarefaController">
+            <summary>
+            Classe que gerencia as tarefas.
+            </summary>
+        </member>
+        <member name="M:AnyDoWebAPI.Controllers.TarefaController.GetByUsuarioId(System.Int32)">
+            <summary>
+            Método que retorna todas as tarefas cadastradas do usuário.
+            </summary>
+            <param name="usuarioid">Id do usuário</param>
+            <returns></returns>
+        </member>
+        <member name="M:AnyDoWebAPI.Controllers.TarefaController.Get(System.Int32)">
+            <summary>
+            Método que retorna registro pelo seu id.
+            </summary>
+            <param name="id">Id da tarefa</param>
+            <returns></returns>
+        </member>
+        <member name="M:AnyDoWebAPI.Controllers.TarefaController.Post(AnyDo.EnvelopeJson.Logic.EnvelopeJson.TarefaEnvelopeJson)">
+            <summary>
+            Método de cadastro de tarefas.
+            </summary>
+            <param name="tarefa">Objeto para cadastro</param>
+            <returns></returns>
+        </member>
+        <member name="M:AnyDoWebAPI.Controllers.TarefaController.Put(AnyDo.EnvelopeJson.Logic.EnvelopeJson.TarefaEnvelopeJson,System.Int32)">
+            <summary>
+            Método de edição de tarefas.
+            </summary>
+            <param name="tarefa">Objeto para edição</param>
+            <param name="id">Id da tarefa</param>
+            <returns></returns>
+        </member>
+        <member name="M:AnyDoWebAPI.Controllers.TarefaController.PutChangeSituation(System.Int32)">
+            <summary>
+            Método que realiza a alteração de uma tarefa para 'Concluída'.
+            </summary>
+            <param name="id">Id da tarefa</param>
+            <returns></returns>
+        </member>
+        <member name="M:AnyDoWebAPI.Controllers.TarefaController.Delete(System.Int32)">
+            <summary>
+            Método para deletar tarefas.
+            </summary>
+            <param name="id">Id da tarefa</param>
+            <returns></returns>
+        </member>
+        <member name="T:AnyDoWebAPI.Controllers.UsuarioController">
+            <summary>
+            Classe que gerencia os usuários
+            </summary>
+        </member>
+        <member name="M:AnyDoWebAPI.Controllers.UsuarioController.Post(AnyDo.EnvelopeJson.Logic.EnvelopeJson.UsuarioEnvelopeJson)">
+            <summary>
+            Método de cadastro de usuários.
+            </summary>
+            <param name="usuario">Objeto para cadastro</param>
+            <returns></returns>
+        </member>
+        <member name="M:AnyDoWebAPI.Controllers.UsuarioController.PostLogin(AnyDo.EnvelopeJson.Logic.EnvelopeJson.UsuarioEnvelopeJson)">
+            <summary>
+            Método que realiza o login do usuário.
+            </summary>
+            <param name="usuario">Objeto usuário com dados para o login</param>
+            <returns></returns>
+        </member>
+        <member name="T:AnyDoWebAPI.Global">
+            <summary>
+            Configurações globais da aplicação
+            </summary>
+        </member>
+    </members>
+</doc>
